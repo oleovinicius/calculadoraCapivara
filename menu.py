@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import string
-from somatoria import *
-from constantes import *
+from somatoria import somatoriaMenu
+from constantes import constanteMenu
 
 def main():
     sair = False
