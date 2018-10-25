@@ -18,7 +18,6 @@ def constanteMenu():
             print(" Σ = 8/(((4*k)+1)*((4*k)+3))")
             print(" k=0")
             k = int(input("Digite o valor de K:"))
-
             print("Valor de PI:"+ str(ConstPI(k)))
             #constantePi(passos, k)
 
@@ -26,7 +25,8 @@ def constanteMenu():
             print("\nPara calcular o valor Euler(e) utiliza-se:")
             print("e (1+(1/k))^k")
             k = float(input("Digite a constante K:"))
-            constanteEuler(k)
+            print("Resultado Euler:" + str(constanteEuler(k)))
+                    
         elif opc == 0:
             sair = True
         else:print("OPÇÃO INVALIDA !!!")
@@ -43,7 +43,7 @@ def constanteMenu():
 def constanteEuler(constante):
     euler = 0.00
     euler = (1+(1/constante))**constante
-    return print("Resultado Euler:" + str(euler))
+    return euler
 
 def ConstPI(n):
 	t= Decimal(0)

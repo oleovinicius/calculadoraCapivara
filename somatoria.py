@@ -16,18 +16,21 @@ def somatoriaMenu():
             constante =float(input("Digite o valor de A:"))
             inicio =int(input("Digite o valor de k:"))
             somatoriaUm(passos, constante, inicio)
+            print("Resultado Somatoria: " + str(somatoriaUm(passos, constante, inicio)))
         elif opc == 2:
             passos =int(input("\nDigite o valor de N:"))+1
             constante =float(input("Digite o valor de A:"))
             extra =int(input("Digite o valor do M:"))
             inicio =int(input("Digite o valor de k:"))
             somatoriaDois(passos, constante, extra, inicio)
+            print("Resultado Somatoria: " + str(somatoriaDois(passos, constante, extra, inicio)))
         elif opc == 3:
             passos =int(input("\nDigite o valor de N:"))+1
             constante =float(input("Digite o valor de A:"))
             extra =int(input("Digite o valor do M:"))
             inicio =int(input("Digite o valor de k:"))
             somatoriaTres(passos, constante, extra, inicio)
+            print("Resultado Somatoria: " + str(somatoriaTres(passos, constante, extra, inicio)))
         elif opc == 0:
             sair = True
         else:print("OPÇÃO INVALIDA !!!")
@@ -37,15 +40,15 @@ def somatoriaUm(passos, constantes, inicio):
     somatoriaResultado=0
     for inicio in range(inicio,passos):
         somatoriaResultado=somatoriaResultado+(constantes**inicio)
-        print("Passo Atual:" + str(inicio))
-    return print("Resultado da somatoria:" + str(somatoriaResultado))
+        # print("Passo Atual:" + str(inicio))
+    return somatoriaResultado
 
 def somatoriaDois(passos,constantes,extra, inicio):
     somatoriaResultado=0
     for inicio in range(inicio,passos):
         somatoriaResultado=somatoriaResultado+((constantes**inicio)**extra)
         #print("Passo Atual:" + str(k))
-    return print("Resultado da somatoria:" + str(somatoriaResultado))
+    return somatoriaResultado
 
 
 def somatoriaTres(passos,constantes,extra, inicio):
@@ -53,4 +56,4 @@ def somatoriaTres(passos,constantes,extra, inicio):
     for inicio in range(inicio,passos):
         somatoriaResultado=(somatoriaResultado+((constantes**extra)**inicio))
         # print("Passo Atual:" + str(inicio))
-    return print("Resultado da somatoria:" + str(somatoriaResultado))
+    return somatoriaResultado

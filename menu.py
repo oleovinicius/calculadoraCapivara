@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-import string
-from somatoria import somatoriaMenu
 from constantes import constanteMenu
+from logicaProposicional import LogicaProposicionalMenu
+from matriz import matrizMenu
+from somatoria import somatoriaMenu
+
 
 def main():
     sair = False
@@ -16,16 +18,21 @@ def main():
         print("  0 - Sair")
         opc = int(input("DIGITE SUA OPCAO:"))
 
-
-        if  opc == 1:
+        if opc == 1:
             somatoriaMenu()
         elif opc == 2:
             constanteMenu()
+        elif opc == 3:
+            LogicaProposicionalMenu()
+        elif opc == 4:
+            matrizMenu()
         elif opc == 0:
             print("Até a proxima ")
-            sair=True
-        else:print("Opção invalida!!!")
+            sair = True
+        else:
+            print("Opção invalida!!!")
         pass
+
 
 if __name__ == "__main__":
     main()
