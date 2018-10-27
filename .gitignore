@@ -1,0 +1,11 @@
+__pycache__
+anotattion
+testes/
+piChudnovsky.py
+.idea/
+.idea/*
+idea/
+build/
+dist/
+menu.spec
+instalaLib.bat
