@@ -3,6 +3,7 @@ from constantes import constanteMenu
 from logicaProposicional import LogicaProposicionalMenu
 from matriz import matrizMenu
 from somatoria import somatoriaMenu
+from combinatoria import combinatoriaMenu
 
 
 def main():
@@ -26,6 +27,9 @@ def main():
             LogicaProposicionalMenu()
         elif opc == 4:
             matrizMenu()
+        elif opc == 6:
+            combinatoriaMenu()
+
         elif opc == 0:
             print("Até a proxima ")
             sair = True
