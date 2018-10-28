@@ -5,7 +5,6 @@ from matriz import matrizMenu
 from somatoria import somatoriaMenu
 from combinatoria import combinatoriaMenu
 
-
 def main():
     sair = False
     while sair == False:
