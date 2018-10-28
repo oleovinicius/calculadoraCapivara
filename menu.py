@@ -17,25 +17,30 @@ def main():
         for i, sMenu in enumerate(sMenu):
             print(' ', i + 1, '-', sMenu)
         print("  0 - Sair")
-        opc = int(input("DIGITE SUA OPCAO:"))
+        try:
+            opc = int(input("DIGITE SUA OPCAO:"))
 
-        if opc == 1:
-            somatoriaMenu()
-        elif opc == 2:
-            constanteMenu()
-        elif opc == 3:
-            LogicaProposicionalMenu()
-        elif opc == 4:
-            matrizMenu()
-        elif opc == 6:
-            combinatoriaMenu()
+            if opc == 1:
+                somatoriaMenu()
+            elif opc == 2:
+                constanteMenu()
+            elif opc == 3:
+                LogicaProposicionalMenu()
+            elif opc == 4:
+                matrizMenu()
+            elif opc == 6:
+                combinatoriaMenu()
 
-        elif opc == 0:
-            print("Até a proxima ")
-            sair = True
-        else:
-            print("Opção invalida!!!")
-        pass
+            elif opc == 0:
+                print("Até a proxima ")
+                sair = True
+            else:
+                print("Opção invalida!!!")
+            pass
+        except:
+            print("\nENTRADA INVALIDA\n")
+
+
 
 
 if __name__ == "__main__":

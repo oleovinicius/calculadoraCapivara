@@ -10,52 +10,54 @@ def LogicaProposicionalMenu():
         print("3.5 p → q")
         print("3.6 p ↔ q")
         print("3.0 Menu principal")
-        opc = int(input("DIGITE SUA OPÇÃO: "))
+        try:
+            opc = int(input("DIGITE SUA OPÇÃO: "))
 
-        if opc == 1:
-            valorP = str(input("\nDigite TRUE ou FALSE para P:"))
-            print("Valor da negação de P é: " + str(negacaoValor(valorP)))
+            if opc == 1:
+                valorP = str(input("\nDigite TRUE ou FALSE para P:"))
+                print("Valor da negação de P é: " + str(negacaoValor(valorP)))
 
-        elif opc == 2:
-            valorP = str(input("\nDigite TRUE ou FALSE para P:"))
-            valorQ = str(input("\nDigite TRUE ou FALSE para Q:"))
-            print("Valor da conjução é: " + str(conjucaoValores(valorP, valorQ)))
+            elif opc == 2:
+                valorP = str(input("\nDigite TRUE ou FALSE para P:"))
+                valorQ = str(input("\nDigite TRUE ou FALSE para Q:"))
+                print("Valor da conjução é: " + str(conjucaoValores(valorP, valorQ)))
 
-        elif opc == 3:
-            valorP = str(input("\nDigite TRUE ou FALSE para P:"))
-            valorQ = str(input("\nDigite TRUE ou FALSE para Q:"))
-            print("Valor da disjunção é: " + str(disjuncaoValores(valorP, valorQ)))
+            elif opc == 3:
+                valorP = str(input("\nDigite TRUE ou FALSE para P:"))
+                valorQ = str(input("\nDigite TRUE ou FALSE para Q:"))
+                print("Valor da disjunção é: " + str(disjuncaoValores(valorP, valorQ)))
 
-        elif opc == 4:
-            valorP = str(input("\nDigite TRUE ou FALSE para P:"))
-            valorQ = str(input("\nDigite TRUE ou FALSE para Q:"))
-            print("Valor da disjunção exclusiva é: " + str(disjuncaoExValores(valorP, valorQ)))
+            elif opc == 4:
+                valorP = str(input("\nDigite TRUE ou FALSE para P:"))
+                valorQ = str(input("\nDigite TRUE ou FALSE para Q:"))
+                print("Valor da disjunção exclusiva é: " + str(disjuncaoExValores(valorP, valorQ)))
 
-        elif opc == 5:
-            valorP = str(input("\nDigite TRUE ou FALSE para P:"))
-            valorQ = str(input("\nDigite TRUE ou FALSE para Q:"))
-            print("Valor da condicional é: " + str(condicionalValores(valorP, valorQ)))
+            elif opc == 5:
+                valorP = str(input("\nDigite TRUE ou FALSE para P:"))
+                valorQ = str(input("\nDigite TRUE ou FALSE para Q:"))
+                print("Valor da condicional é: " + str(condicionalValores(valorP, valorQ)))
 
-        elif opc == 6:
-            valorP = str(input("\nDigite TRUE ou FALSE para P:"))
-            valorQ = str(input("\nDigite TRUE ou FALSE para Q:"))
-            print("Valor da equivalencia é: " + str(equivalenciaValores(valorP, valorQ)))
+            elif opc == 6:
+                valorP = str(input("\nDigite TRUE ou FALSE para P:"))
+                valorQ = str(input("\nDigite TRUE ou FALSE para Q:"))
+                print("Valor da equivalencia é: " + str(equivalenciaValores(valorP, valorQ)))
 
 
-        elif opc == 0:
-            sair = True
+            elif opc == 0:
+                sair = True
 
-        else:
-            print("\nOPÇÃO INVALIDA!!!\n")
+            else:
+                print("\nOPÇÃO INVALIDA!!!\n")
+            pass
+        except:
+            print("\nENTRADA INVALIDA!!!\n")
 
 def verificaValores(n):
-    if n == "True" or n == "true" or n == "TRUE":
+    if n == "True" or n == "true" or n == "TRUE" or n == True:
         return True
-    elif n == "False" or n == "false" or n == "FALSE":
+    elif n == "False" or n == "false" or n == "FALSE" or n == False:
         return False
-    else:
-        print(n)
-        return print ("\nPARAMETRO INVALIDO!!\n")
+
 
 def negacaoValor(p):
     p = verificaValores(p)
