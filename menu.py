@@ -4,6 +4,7 @@ from logicaProposicional import LogicaProposicionalMenu
 from matriz import matrizMenu
 from somatoria import somatoriaMenu
 from combinatoria import combinatoriaMenu
+from funcao import funcaoMenu
 
 def main():
     sair = False
@@ -27,6 +28,8 @@ def main():
                 LogicaProposicionalMenu()
             elif opc == 4:
                 matrizMenu()
+            elif opc == 5:
+                funcaoMenu()
             elif opc == 6:
                 combinatoriaMenu()
 
