@@ -5,6 +5,7 @@ from matriz import matrizMenu
 from somatoria import somatoriaMenu
 from combinatoria import combinatoriaMenu
 from funcao import funcaoMenu
+from derivada import derivadaMenu
 
 def main():
     sair = False
@@ -32,6 +33,8 @@ def main():
                 funcaoMenu()
             elif opc == 6:
                 combinatoriaMenu()
+            elif opc == 7:
+                derivadaMenu()
 
             elif opc == 0:
                 print("Até a proxima ")
