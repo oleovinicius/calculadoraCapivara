@@ -50,19 +50,22 @@ def funcaoMenu():
             if opc == 5:
                 try:
                     x = float(input("\nDigite um valor para x:"))
-                    print("Valor do seno de", x,':', seno(x))
+                    xConv = converteGrausRadianos(x)
+                    print("Valor do seno de", x,':', seno(xConv))
                 except:
                     print("Parametrização Errada!!!")
             if opc == 6:
                 try:
                     x = float(input("\nDigite um valor para x:"))
-                    print("Valor do cosseno de", x,':', cos(x))
+                    xConv = converteGrausRadianos(x)
+                    print("Valor do cosseno de", x,':', cos(xConv))
                 except:
                     print("Parametrização Errada!!!")
             if opc == 7:
                 try:
                     x = float(input("\nDigite um valor para x:"))
-                    print("Valor da tangente de", x,':', tag(x))
+                    xConv = converteGrausRadianos(x)
+                    print("Valor da tangente de", x,':', tag(xConv))
                 except:
                     print("Parametrização Errada!!!")
             if opc == 8:
@@ -96,6 +99,10 @@ def funcaoMenu():
             print("Opção invalida!!")
             pass
 
+def converteGrausRadianos(x):
+    res = (x*np.pi)/180
+    return res
+
 def constante(n):
     return n
 
@@ -128,7 +135,7 @@ def umSobre(n):
     return res
 
 def eulerElevado(n):
-    res = constanteEuler(999999)**n
+    res = np.exp(n)
     return res
 
 def logaritimoNatural(n):
