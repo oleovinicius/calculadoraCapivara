@@ -29,7 +29,7 @@ def somatoriaMenu():
                 try:
                     passos =int(input("\nDigite o valor de N:"))+1
                     constante =float(input("Digite o valor de A:"))
-                    extra =int(input("Digite o valor do M:"))
+                    extra =float(input("Digite o valor do M:"))
                     inicio =int(input("Digite o valor de k:"))
                     somatoriaDois(passos, constante, extra, inicio)
                     print("Resultado Somatoria: " + str(somatoriaDois(passos, constante, extra, inicio)))
@@ -39,7 +39,7 @@ def somatoriaMenu():
                 try:
                     passos =int(input("\nDigite o valor de N:"))+1
                     constante =float(input("Digite o valor de A:"))
-                    extra =int(input("Digite o valor do M:"))
+                    extra = float(input("Digite o valor do M:"))
                     inicio =int(input("Digite o valor de k:"))
                     somatoriaTres(passos, constante, extra, inicio)
                     print("Resultado Somatoria: " + str(somatoriaTres(passos, constante, extra, inicio)))

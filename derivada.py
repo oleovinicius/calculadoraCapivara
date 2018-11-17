@@ -122,7 +122,6 @@ def derivadaSen(x):
 
 def derivadaCos(x):
     res = -1*(np.sin(x))
-    print(res)
     return res
 
 def derivadaTan(x):
