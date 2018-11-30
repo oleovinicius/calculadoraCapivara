@@ -6,7 +6,7 @@ def LogicaProposicionalMenu():
         print("3.1 ¬ p")
         print("3.2 p ∧ q")
         print("3.3 p ∨ q")
-        print("3.4 p ∨ q")
+        print("3.4 p ou exclusivo q")
         print("3.5 p → q")
         print("3.6 p ↔ q")
         print("3.0 Menu principal")
