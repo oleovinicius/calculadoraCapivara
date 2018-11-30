@@ -870,3 +870,11 @@ if __name__ == "__main__":
     Main.show()
     sys.exit(app.exec_())
 
+def modoGrafico():
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Main = QtWidgets.QDialog()
+    ui = Ui_Main()
+    ui.setupUi(Main)
+    Main.show()
+    sys.exit(app.exec_())

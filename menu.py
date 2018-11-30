@@ -6,6 +6,8 @@ from somatoria import somatoriaMenu
 from combinatoria import combinatoriaMenu
 from funcao import funcaoMenu
 from derivada import derivadaMenu
+from integral import integralMenu
+from calculadoraCapivara import *
 
 def main():
     sair = False
@@ -13,11 +15,11 @@ def main():
         print("\nCalculadora Capivara")
         print("Menu principal:")
         sMenu = ['Somatoria', 'Constantes', 'Logica Proposicional', 'Matriz', 'Funcao',
-                 'Combinatoria', 'Derivada Numerica', 'Integral Numerica']
+                 'Combinatoria', 'Derivada Numerica', 'Integral Numerica','Modo Gráfico']
 
         for i, sMenu in enumerate(sMenu):
-            print(' ', i + 1, '-', sMenu)
-        print("  0 - Sair")
+            print(' ', i + 1, '>>', sMenu)
+        print("  0 > Sair")
         try:
             opc = int(input("DIGITE SUA OPCAO:"))
 
@@ -35,6 +37,10 @@ def main():
                 combinatoriaMenu()
             elif opc == 7:
                 derivadaMenu()
+            elif opc == 8:
+                integralMenu()
+            elif opc == 9:
+                modoGrafico()
 
             elif opc == 0:
                 print("Até a proxima ")
