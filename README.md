@@ -19,30 +19,46 @@ O projeto foi desenvolvido em Python 3.7, e como libs foram utilizadas o Numpy p
 
 ## Windows:
 
+Primeiramente baixe e instale o Python para windows_32 neste [link](https://www.python.org/ftp/python/3.7.1/python-3.7.1.exe "Python para windows 32") e windows_64 neste [link.]("https://www.python.org/ftp/python/3.7.1/python-3.7.1-amd64.exe "Python para windows 64")
+
+Após isto baixe o projeto no git ou clone ele caso tenha o git instalado.
+
+<strong>_IMPORTANTE: Baixe o arquivo na pasta Documentos_</strong>
+
+Agora execute o instalador.bat em *Documentos/calculadoraCapivara*.
+
+E para rodar o programa é só usar o executavel.bat.
+
 ## Linux:
 
 Instale o python na sua distro (Debian, linuxMint, Ubuntu):
-
-<pre> <code>sudo apt install python3.7 </code></pre>
+```sh
+$sudo apt install python3.7
+```
 
 Para alterar a versão padrão do python siga este [link.](https://blog.da2k.com.br "Trocando o python para 3.7")
 
 Após isso instale o gerenciador pip:
-
-<pre> <code>sudo apt install python3-pip </code></pre>
+```sh
+$sudo apt install python3-pip
+```
 
 Agora instale o Numpy e o PyQt5 com o comando:
-
-<pre> <code>pip3 install -r requirements.txt</code></pre>
+```sh
+$pip3 install -r requirements.txt
+```
 
 Baixe o projeto, ou de um git clone:
-
-<pre> <code>git clone http://github.com/oleovinicius/calculadoraCapivara </code></pre>
+```sh
+$git clone http://github.com/oleovinicius/calculadoraCapivara.git
+```
 
 Dentro da pasta /calculadoraCapivara de o comando para iniciar o projeto:
-
-<pre> <code>python menu.py</code></pre>
+```sh
+$python menu.py
+```
 
 Caso não tenha setado o python 3.7 como chamada padrão use:
-
-<pre> <code>python3 menu.py</code></pre>
+```sh
+$python3 menu.py
+```
