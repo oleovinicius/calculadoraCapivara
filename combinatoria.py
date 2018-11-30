@@ -1,4 +1,3 @@
-import scipy
 from math import factorial
 def combinatoriaMenu():
     sair = False
