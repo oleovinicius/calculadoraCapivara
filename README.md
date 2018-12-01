@@ -19,7 +19,7 @@ O projeto foi desenvolvido em Python 3.7, e como libs foram utilizadas o Numpy p
 
 ## Windows:
 
-Primeiramente baixe e instale o Python para windows_32 neste [link](https://www.python.org/ftp/python/3.7.1/python-3.7.1.exe "Python para windows 32") e windows_64 neste [link.]("https://www.python.org/ftp/python/3.7.1/python-3.7.1-amd64.exe "Python para windows 64")
+Primeiramente baixe e instale o Python para windows_32 neste [link](https://www.python.org/ftp/python/3.7.1/python-3.7.1.exe "Python para windows 32") e windows_64 neste [link.](https://www.python.org/ftp/python/3.7.1/python-3.7.1-amd64.exe "Python para windows 64")
 
 Após isto baixe o projeto no git ou clone ele caso tenha o git instalado.
 
